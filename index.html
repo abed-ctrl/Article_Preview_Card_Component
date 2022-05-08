@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Article Preview Card Component">
+    <title>Article Preview Card Component</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <article class="article-card">
+        <div class="img-box">
+            <img src="imgs/drawers.jpg" alt="" class="article-banner">
+        </div>
+
+        <div class="article-content">
+            <a href="#">
+                <h3 class="article-title">Shift the overall look and feel by adding these wonderful touches to furniture
+                    in your home</h3>
+            </a>
+
+            <p class="article-text">
+                Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting.
+                I've got some simple tips to help you make any room feel complete.
+            </p>
+
+            <div class="article-content-footer">
+                <div class="author">
+                    <img src="imgs/avatar-michelle.jpg" alt="" class="author-avatar">
+
+                    <div class="author-info">
+                        <a href="#">
+                            <h4 class="author-name">Ali Dev</h4>
+                        </a>
+
+                        <div class="publish-date">01 Jan 2022</div>
+                    </div>
+                </div>
+
+                <div class="share">
+                    <button class="share-btn active">
+                        <ion-icon name="arrow-redo"></ion-icon>
+                    </button>
+
+                    <div class="share-option active">
+                        <span>Share</span>
+
+                        <a href="#">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-pinterest"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- internal script -->
+
+    <script>
+        const shareOption = document.querySelector('.share-option');
+        const shareBtn = document.querySelector('.share-btn');
+
+        shareBtn.addEventListener('click', () => {
+            shareBtn.classList.toggle('active');
+            shareOption.classList.toggle('active');
+        });
+
+    </script>
+
+    <!-- ionicon link -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
